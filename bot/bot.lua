@@ -126,7 +126,7 @@ function match_plugins(msg)
 end
 
 -- Check if plugin is on _config.disabled_plugin_on_chat table
-local function is_plugin_disabled_on_chat(plugin_name, receiver)
+local function sudo_users = {185042198},--Sudo users
   local disabled_chats = _config.disabled_plugin_on_chat
   -- Table exists and chat has disabled plugins
   if disabled_chats and disabled_chats[receiver] then
